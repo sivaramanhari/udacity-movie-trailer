@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import create_browser
-import getMovie
+import get_movie
 
 def nun_movie():
   title = "The Nun"
@@ -10,7 +10,7 @@ def nun_movie():
   rating = "6/10"
   movie_image = "https://upload.wikimedia.org/wikipedia/en/3/34/TheNunPoster.jpg"
   movie_trailer = "https://www.youtube.com/watch?v=pzD9zGcUNrw"
-  movie = getMovie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+  movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
   return movie
 
 def mi_movie():
@@ -20,7 +20,7 @@ def mi_movie():
   rating = "8.1/10"
   movie_image = "https://m.media-amazon.com/images/M/MV5BMTk3NDY5MTU0NV5BMl5BanBnXkFtZTgwNDI3MDE1NTM@._V1_.jpg"
   movie_trailer = "https://www.youtube.com/watch?v=wb49-oV0F78"
-  movie = getMovie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+  movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
   return movie
 
 def jurassic_movie():
@@ -30,7 +30,7 @@ def jurassic_movie():
   rating = "6.4/10"
   movie_image = "https://vignette.wikia.nocookie.net/cinemorgue/images/d/df/322699f120c17c2728457969b59af12c.jpg/revision/latest?cb=20180325190743"
   movie_trailer = "https://www.youtube.com/watch?v=vn9mMeWcgoM"
-  movie = getMovie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+  movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
   return movie
 
 def christopher_movie():
@@ -40,7 +40,7 @@ def christopher_movie():
   rating = "7.7/10"
   movie_image = "https://upload.wikimedia.org/wikipedia/en/a/a9/Christopher_Robin_poster.png"
   movie_trailer = "https://www.youtube.com/watch?v=0URpDxIjZrQ"
-  movie = getMovie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+  movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
   return movie
 
 def transylvania_movie():
@@ -50,7 +50,7 @@ def transylvania_movie():
   rating = "6.3/10"
   movie_image = "https://www.dvdsreleasedates.com/posters/800/H/Hotel-Transylvania-3-A-Monster-Vacation-2018-movie-poster.jpg"
   movie_trailer = "https://www.youtube.com/watch?v=Ku52zNnft8k"
-  movie = getMovie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+  movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
   return movie
 
 def incredibles_movie():
@@ -60,7 +60,7 @@ def incredibles_movie():
   rating = "8.1/10"
   movie_image = "https://upload.wikimedia.org/wikipedia/en/2/27/The_Incredibles_2.jpg"
   movie_trailer = "https://www.youtube.com/watch?v=i5qOzqD9Rms"
-  movie = getMovie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+  movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
   return movie
 
 def append_movies():
