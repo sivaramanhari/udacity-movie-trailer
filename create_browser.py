@@ -10,6 +10,7 @@ import os
 import re
 
 # Styles and scripting for the page
+# pylint: disable-msg=C0103
 main_page_head = '''
 <!DOCTYPE html>
 <html lang="en">
@@ -93,6 +94,7 @@ main_page_head = '''
 
 
 # The main page layout and title bar
+# pylint: disable-msg=C0103
 main_page_content = '''
   <body>
     <!-- Trailer Video Modal -->
@@ -127,6 +129,7 @@ main_page_content = '''
 
 
 # A single movie entry html template
+# pylint: disable-msg=C0103
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{movie_image}" width="220" height="342">
