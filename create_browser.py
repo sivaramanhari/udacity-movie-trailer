@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 #Module Docu String
 """
 This module will create an html page for displaying Movie Tile and Movie Trailer.
