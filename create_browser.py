@@ -10,6 +10,7 @@ import os
 import re
 
 # Styles and scripting for the page
+# C0301 - To disable 'line too long' message
 # pylint: disable-msg=C0103
 main_page_head = '''
 <!DOCTYPE html>
