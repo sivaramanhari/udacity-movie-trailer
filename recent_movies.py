@@ -52,7 +52,7 @@ def nun_movie():
 
 def mi_movie():
     '''
-        Defines and constructs variables for movie nun.
+    Defines and constructs variables for movie nun.
 
     The method will create an instance of class Movie for the
     movie 'Mission Impossible' and assign attributes respectively.
