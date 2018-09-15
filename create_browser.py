@@ -1,8 +1,16 @@
 #!/usr/bin/env python
 
-#Module Docu String
-"""
-This module will create an html page for displaying Movie Tile and Movie Trailer.
+# Module Doc String
+""" 
+The module will create the html page displaying Movie Title and Movie Trailer.
+
+The module has variable that used to create html page and has two methods.
+
+create_movie_tiles_content() : This method will provide the elements for
+    the html page such as movie title, movie poster, trailer URL, etc.
+
+open_movies_page() : This method will define and create the html file
+    and open it in your default browser.
 """
 
 import webbrowser
@@ -68,8 +76,9 @@ main_page_head = '''
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
         $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
-            // reliable way to ensure the video stops playing in IE
+            // Remove the src so the player itself gets removed, as this
+            // is the only reliable way to ensure the video stops
+            // playing in IE
             $("#trailer-video-container").empty();
         });
         // Start playing the video whenever the trailer modal is opened
@@ -77,15 +86,16 @@ main_page_head = '''
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
             var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-              'id': 'trailer-video',
-              'type': 'text-html',
-              'src': sourceUrl,
-              'frameborder': 0
+                    'id': 'trailer-video',
+                    'type': 'text-html',
+                    'src': sourceUrl,
+                    'frameborder': 0
             }));
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
-          $('.movie-tile').hide().first().show("fast", function showNext() {
+          $('.movie-tile').hide().first().show("fast", 
+                function showNext() {
             $(this).next("div").show("fast", showNext);
           });
         });
@@ -145,6 +155,14 @@ movie_tile_content = '''
 def create_movie_tiles_content(movies):
     """
     Extracts and get the movie title, trailer from the array.
+
+    The method will get the array of movies and assign variables
+    respectively for the html file template to consume it.
+
+    Parameters
+    ----------
+    movies: array list
+        The movies argument is a list of array of objects of a class instance.
     """
     # The HTML content for this section of the page
     content = ''
@@ -172,6 +190,18 @@ def create_movie_tiles_content(movies):
 def open_movies_page(movies):
     """
     Create the html file for movie trailer.
+
+    This method will create and write the contents to the html file. The html
+    content that's been created from the format after substituting the
+    respective variables for the movies. And then the method will open the
+    created html file in the default we browser.
+
+    Parameters
+    ----------
+
+    movies - array list
+        The movies argument is a list of array of objects of a class instance.
+
     """
     # Create or overwrite the output file
     output_file = open('recent_releases.html', 'w')

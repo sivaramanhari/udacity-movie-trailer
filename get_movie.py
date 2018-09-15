@@ -17,12 +17,12 @@ class Movie:
     '''
     The Class Movie will get the title, image link, trailer link, etc. and pass it to create html page.
     '''
-    #Iniate Constructor for the class
+    # Iniate Constructor for the class
     def __init__(obj, title, short, genre, rating, movie_image, movie_trailer):
         '''
         Constructor method for class Movie.
         '''
-        #Assign param values to object properties
+        # Assign param values to object properties
         obj.title = title
         obj.short = short
         obj.genre = genre

@@ -9,7 +9,7 @@ The script that append different movies and call create_browser module that crea
 import create_browser
 import get_movie
 
-#To add new movie, Copy one of the movie method and edit it with respective values.
+# To add new movie, Copy one of the movie method and edit it with respective values.
 def nun_movie():
     '''
     Defines and constructs variables for movie nun
@@ -20,7 +20,7 @@ def nun_movie():
     rating = "6/10"
     movie_image = "https://upload.wikimedia.org/wikipedia/en/3/34/TheNunPoster.jpg"
     movie_trailer = "https://www.youtube.com/watch?v=pzD9zGcUNrw"
-    #Calling Class Movie
+    # Calling Class Movie
     movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
     return movie
 
@@ -34,7 +34,7 @@ def mi_movie():
     rating = "8.1/10"
     movie_image = "https://m.media-amazon.com/images/M/MV5BMTk3NDY5MTU0NV5BMl5BanBnXkFtZTgwNDI3MDE1NTM@._V1_.jpg"
     movie_trailer = "https://www.youtube.com/watch?v=wb49-oV0F78"
-    #Calling Class Movie
+    # Calling Class Movie
     movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
     return movie
 
@@ -48,7 +48,7 @@ def jurassic_movie():
     rating = "6.4/10"
     movie_image = "https://vignette.wikia.nocookie.net/cinemorgue/images/d/df/322699f120c17c2728457969b59af12c.jpg/revision/latest?cb=20180325190743"
     movie_trailer = "https://www.youtube.com/watch?v=vn9mMeWcgoM"
-    #Calling Class Movie
+    # Calling Class Movie
     movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
     return movie
 
@@ -62,7 +62,7 @@ def christopher_movie():
     rating = "7.7/10"
     movie_image = "https://upload.wikimedia.org/wikipedia/en/a/a9/Christopher_Robin_poster.png"
     movie_trailer = "https://www.youtube.com/watch?v=0URpDxIjZrQ"
-    #Calling Class Movie
+    # Calling Class Movie
     movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
     return movie
 
@@ -76,7 +76,7 @@ def transylvania_movie():
     rating = "6.3/10"
     movie_image = "https://www.dvdsreleasedates.com/posters/800/H/Hotel-Transylvania-3-A-Monster-Vacation-2018-movie-poster.jpg"
     movie_trailer = "https://www.youtube.com/watch?v=Ku52zNnft8k"
-    #Calling Class Movie
+    # Calling Class Movie
     movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
     return movie
 
@@ -90,7 +90,7 @@ def incredibles_movie():
     rating = "8.1/10"
     movie_image = "https://upload.wikimedia.org/wikipedia/en/2/27/The_Incredibles_2.jpg"
     movie_trailer = "https://www.youtube.com/watch?v=i5qOzqD9Rms"
-    #Calling Class Movie
+    # Calling Class Movie
     movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
     return movie
 
@@ -98,7 +98,7 @@ def append_movies():
     '''
     Call all movie methods, define movie list used as the parameters for the method open_movies_page that creates the HTML page
     '''
-    #Once created method add the method call here
+    # Once created method add the method call here
     nun = nun_movie()
     mim = mi_movie()
     jurassic = jurassic_movie()
@@ -106,9 +106,9 @@ def append_movies():
     transylvania = transylvania_movie()
     incredibles = incredibles_movie()
 
-    #After calling the method, add the variable assigned to the respective method to the below moves list.
+    # After calling the method, add the variable assigned to the respective method to the below moves list.
     movies = [nun, mim, jurassic, christopher, transylvania, incredibles]
-    #Calls the method that create HTML page
+    # Calls the method that create HTML page
     create_browser.open_movies_page(movies)
 
 append_movies()
