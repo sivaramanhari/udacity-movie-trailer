@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Module Doc String
-""" 
+"""
 The module will create the html page displaying Movie Title and Movie Trailer.
 
 The module has variable that used to create html page and has two methods.
@@ -94,8 +94,7 @@ main_page_head = '''
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
-          $('.movie-tile').hide().first().show("fast", 
-                function showNext() {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
           });
         });

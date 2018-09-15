@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 '''
 Module to initialise class Movie.
+
+This module has a class Movie which has a constructor, that
+construct the object and respective properties.
 '''
+
 
 # C0301 - To disable 'line too long' message
 # pylint: disable-msg=C0301
@@ -15,12 +19,18 @@ Module to initialise class Movie.
 # pylint: disable-msg=R0913
 class Movie:
     '''
-    The Class Movie will get the title, image link, trailer link, etc. and pass it to create html page.
+    The Class Movie will get the title, image link, trailer link, etc.
+    and pass it to create html page.
+
+    The class expects 6 properties to be passed when creating it's instance.
     '''
     # Iniate Constructor for the class
     def __init__(obj, title, short, genre, rating, movie_image, movie_trailer):
         '''
         Constructor method for class Movie.
+
+        The constructor will initiate the object and the
+        object properties respectievely.
         '''
         # Assign param values to object properties
         obj.title = title

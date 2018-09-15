@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 '''
-The script that append different movies and call create_browser module that creates html file.
+The script that append different movies and call create_browser
+module that creates html file.
+
+The script contains methods for each movie content. Each method
+of a movie will create a instance of a class Movie for each
+movie respectively to assign attributes like title, poster image,
+trailer link, etc.
 '''
 
 # C0301 - To disable 'line too long' message
@@ -9,94 +15,223 @@ The script that append different movies and call create_browser module that crea
 import create_browser
 import get_movie
 
-# To add new movie, Copy one of the movie method and edit it with respective values.
+
+# To add new movie, Copy one of the movie method
+# and edit it with respective values.
 def nun_movie():
     '''
-    Defines and constructs variables for movie nun
+    Defines and constructs variables for movie nun.
+
+    The method will create an instance of class Movie for the
+    movie 'The Nun' and assign attributes respectively.
+
+    Parameters
+    -----------
+    No arguments expected
+
+    Returns
+    -------
+    object of class movie
+        The Class movie instance is been assigned to the object movie and is
+        been returned back.
+
     '''
     title = "The Nun"
-    short = "When a young nun at a cloistered abbey in Romania takes her own life, a priest with a haunted past and a novitiate on the threshold."
+    short = """When a young nun at a cloistered abbey in Romania takes her own
+    life, a priest with a haunted past and a novitiate on the threshold."""
     genre = "Horror"
     rating = "6/10"
-    movie_image = "https://upload.wikimedia.org/wikipedia/en/3/34/TheNunPoster.jpg"
+    movie_image = (
+        'https://upload.wikimedia.org/wikipedia/en/3/34/TheNunPoster.jpg')
     movie_trailer = "https://www.youtube.com/watch?v=pzD9zGcUNrw"
     # Calling Class Movie
-    movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+    movie = get_movie.Movie(
+        title, short, genre, rating, movie_image, movie_trailer)
     return movie
+
 
 def mi_movie():
     '''
-    Defines and constructs variables for movie nun
+        Defines and constructs variables for movie nun.
+
+    The method will create an instance of class Movie for the
+    movie 'Mission Impossible' and assign attributes respectively.
+
+    Parameters
+    -----------
+    No arguments expected
+
+    Returns
+    -------
+    object of class movie
+        The Class movie instance is been assigned to the object movie and is
+        been returned back.
     '''
     title = "Mission: Impossible - Fallout"
-    short = "Ethan Hunt and the IMF team join forces with CIA assassin August Walker to prevent a disaster of epic proportions."
+    short = """Ethan Hunt and the IMF team join forces with CIA assassin
+        August Walker to prevent a disaster of epic proportions."""
     genre = "Action"
     rating = "8.1/10"
-    movie_image = "https://m.media-amazon.com/images/M/MV5BMTk3NDY5MTU0NV5BMl5BanBnXkFtZTgwNDI3MDE1NTM@._V1_.jpg"
+    movie_image = (
+        'https://m.media-amazon.com/images/M/'
+        'MV5BMTk3NDY5MTU0NV5BMl5BanBnXkFtZTgwNDI3MDE1NTM@._V1_.jpg')
     movie_trailer = "https://www.youtube.com/watch?v=wb49-oV0F78"
     # Calling Class Movie
-    movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+    movie = get_movie.Movie(
+        title, short, genre, rating, movie_image, movie_trailer)
     return movie
+
 
 def jurassic_movie():
     '''
-    Defines and constructs variables for movie nun
+    Defines and constructs variables for movie nun.
+
+    The method will create an instance of class Movie for the
+    movie 'Jurassic World' and assign attributes respectively.
+
+    Parameters
+    -----------
+    No arguments expected
+
+    Returns
+    -------
+    object of class movie
+        The Class movie instance is been assigned to the object movie and is
+        been returned back.
     '''
     title = "Jurassic World: Fallen Kingdom"
-    short = "Three years after the destruction of the Jurassic World theme park, Owen Grady and Claire Dearing return to the island of Isla Nublar to save the remaining dinosaurs from a volcano that's about to erupt."
+    short = """Three years after the destruction of the Jurassic World
+    theme park, Owen Grady and Claire Dearing return to the island
+    of Isla Nublar to save the remaining dinosaurs from
+    a volcano that's about to erupt."""
     genre = "Action"
     rating = "6.4/10"
-    movie_image = "https://vignette.wikia.nocookie.net/cinemorgue/images/d/df/322699f120c17c2728457969b59af12c.jpg/revision/latest?cb=20180325190743"
+    movie_image = (
+        'https://vignette.wikia.nocookie.net/cinemorgue/images'
+        '/d/df/322699f120c17c2728457969b59af12c.jpg/'
+        'revision/latest?cb=20180325190743')
     movie_trailer = "https://www.youtube.com/watch?v=vn9mMeWcgoM"
     # Calling Class Movie
-    movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+    movie = get_movie.Movie(
+        title, short, genre, rating, movie_image, movie_trailer)
     return movie
+
 
 def christopher_movie():
     '''
-    Defines and constructs variables for movie nun
+    Defines and constructs variables for movie nun.
+
+    The method will create an instance of class Movie for the
+    movie 'Christopher Robin' and assign attributes respectively.
+
+    Parameters
+    -----------
+    No arguments expected
+
+    Returns
+    -------
+    object of class movie
+        The Class movie instance is been assigned to the object movie and is
+        been returned back.
     '''
     title = "Christopher Robin"
-    short = "Christopher Robin -- now a family man living in London -- receives a surprise visit from his old childhood pal, Winnie-the-Pooh."
+    short = """Christopher Robin -- now a family man living in London --
+    receives a surprise visit from his old childhood
+    pal, Winnie-the-Pooh."""
     genre = "Comedy"
     rating = "7.7/10"
-    movie_image = "https://upload.wikimedia.org/wikipedia/en/a/a9/Christopher_Robin_poster.png"
+    movie_image = (
+        'https://upload.wikimedia.org/wikipedia/en/'
+        'a/a9/Christopher_Robin_poster.png')
     movie_trailer = "https://www.youtube.com/watch?v=0URpDxIjZrQ"
     # Calling Class Movie
-    movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+    movie = get_movie.Movie(
+        title, short, genre, rating, movie_image, movie_trailer)
     return movie
+
 
 def transylvania_movie():
     '''
-    Defines and constructs variables for movie nun
+    Defines and constructs variables for movie nun.
+
+    The method will create an instance of class Movie for the
+    movie 'Hotel Transylvania' and assign attributes respectively.
+
+    Parameters
+    -----------
+    No arguments expected
+
+    Returns
+    -------
+    object of class movie
+        The Class movie instance is been assigned to the object movie and is
+        been returned back.
     '''
     title = "Hotel Transylvania 3: Summer Vacation"
-    short = "Mavis surprises Dracula with a family voyage on a luxury Monster Cruise Ship so he can take a vacation from providing everyone else's vacation at the hotel."
+    short = """Mavis surprises Dracula with a family voyage on a luxury
+    Monster Cruise Ship so he can take a vacation from providing
+    everyone else's vacation at the hotel."""
     genre = "Animation/Comedy"
     rating = "6.3/10"
-    movie_image = "https://www.dvdsreleasedates.com/posters/800/H/Hotel-Transylvania-3-A-Monster-Vacation-2018-movie-poster.jpg"
+    movie_image = (
+        'https://www.dvdsreleasedates.com/posters/800/H/'
+        'Hotel-Transylvania-3-A-Monster-Vacation-2018-movie-poster.jpg')
     movie_trailer = "https://www.youtube.com/watch?v=Ku52zNnft8k"
     # Calling Class Movie
-    movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+    movie = get_movie.Movie(
+        title, short, genre, rating, movie_image, movie_trailer)
     return movie
+
 
 def incredibles_movie():
     '''
-    Defines and constructs variables for movie nun
+    Defines and constructs variables for movie nun.
+
+    The method will create an instance of class Movie for the
+    movie 'Incredibles' and assign attributes respectively.
+
+    Parameters
+    -----------
+    No arguments expected
+
+    Returns
+    -------
+    object of class movie
+        The Class movie instance is been assigned to the object movie and is
+        been returned back.
     '''
     title = "Incredibles 2"
-    short = "Everyone's favorite family of superheroes is back in 'Incredibles 2' but this time Helen is in the spotlight, leaving Bob at home with Violet and Dash to navigate the day-to-day heroics of 'normal' life."
+    short = """Everyone's favorite family of superheroes is back in
+    'Incredibles 2' but this time Helen is in the spotlight, leaving
+    Bob at home with Violet and Dash to navigate the day-to-day
+    heroics of 'normal' life."""
     genre = "Animation/Action"
     rating = "8.1/10"
-    movie_image = "https://upload.wikimedia.org/wikipedia/en/2/27/The_Incredibles_2.jpg"
+    movie_image = (
+        'https://upload.wikimedia.org/wikipedia/en'
+        '/2/27/The_Incredibles_2.jpg')
     movie_trailer = "https://www.youtube.com/watch?v=i5qOzqD9Rms"
     # Calling Class Movie
-    movie = get_movie.Movie(title, short, genre, rating, movie_image, movie_trailer)
+    movie = get_movie.Movie(
+        title, short, genre, rating, movie_image, movie_trailer)
     return movie
+
 
 def append_movies():
     '''
-    Call all movie methods, define movie list used as the parameters for the method open_movies_page that creates the HTML page
+    Call all the movie methods and pass it to create_browser module.
+
+    The method will call all the above methods that creates instance and
+    initialise the objects and restpective attributes with respective movie
+    properties.
+
+    Parameters:
+    -----------
+    No arguments expected
+
+    Returns:
+    --------
+    No returns are passed
     '''
     # Once created method add the method call here
     nun = nun_movie()
@@ -106,7 +241,8 @@ def append_movies():
     transylvania = transylvania_movie()
     incredibles = incredibles_movie()
 
-    # After calling the method, add the variable assigned to the respective method to the below moves list.
+    # After calling the method, add the variable assigned
+    # to the respective method to the below moves list.
     movies = [nun, mim, jurassic, christopher, transylvania, incredibles]
     # Calls the method that create HTML page
     create_browser.open_movies_page(movies)
